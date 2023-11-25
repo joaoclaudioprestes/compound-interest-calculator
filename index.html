@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Júros Compostos</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <section id="left">
+            <img src="img/undraw_calculator_re_alsc.svg" alt="Imagem calculadora">
+        </section>
+
+        <section id="right">
+            <h1>Calculadora de Juros Compostos</h1>
+            <form action="">
+                <div>
+                    <label for="initial-value">Capital inicial (R$):</label>
+                    <input type="number" name="initial-value" id="initial-value" placeholder="R$ 1000.00">
+                </div>
+                <div>
+                    <label for="monthly-application">Aplicação mensal (R$):</label>
+                    <input type="number" name="monthly-application" id="monthly-application" placeholder="R$ 100.00">
+                </div>
+                <div>
+                    <label for="interest-rate">Taxa de juros a.m:</label>
+                    <input type="number" name="interest-rate" id="interest-rate" placeholder="1.5">
+                </div>
+                <div>
+                    <label for="time-yield">Tempo de Rendimento (meses):</label>
+                    <input type="number" name="time-yield" id="time-yield" placeholder="12">
+                </div>
+            </form>
+            <span>Resultado</span>
+            <h2 id="result">R$ 0,00</h2>
+
+            <button id="btn-calculate">Calcular</button>
+        </section>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>

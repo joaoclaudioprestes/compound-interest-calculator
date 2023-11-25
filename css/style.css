@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient( circle farthest-corner at 10% 20%,  rgb(26, 110, 219) 0%, rgba(4,0,4,1) 90% );
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 40px;
+    background: radial-gradient(circle farthest-corner at 10% 20%,  rgba(66, 70, 169, 0.732) 0%, rgba(4, 0, 4, 0.589) 90%);
+    border-radius: 10px;
+    color: #fff;
+    border: 1px solid rgb(71, 71, 71);
+}
+
+#left {
+    display: flex;
+    justify-content: center;
+}
+
+#left > img {
+    max-width: 60%;
+}
+
+#right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#right > form {
+    width: 100%;
+}
+
+#right form > div {
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+#initial-value, #interest-rate, #time-yield, #monthly-application {
+    height: 20px;
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    border-bottom: 1px solid rgba(26, 110, 219, 0.507);
+    outline: none;
+    color: white;
+}
+
+#btn-calculate {
+    width: 200px;
+    height: 40px;
+    font-size: 1rem;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#right > span {
+    margin-top: 10px;
+}
+
+@media (max-width: 400px) {
+    main {
+        flex-direction: column;
+    }
+    
+    #right {
+        text-align: center;
+    }
+
+}
